@@ -652,6 +652,18 @@
 <vertex x="0.6" y="0.35" curve="-90"/>
 </polygon>
 </package>
+<package name="2MMPLCC4" urn="urn:adsk.eagle:footprint:14540838/1" library_version="51">
+<smd name="A" x="0.9" y="-0.7" dx="1" dy="1" layer="1" roundness="20"/>
+<smd name="C3" x="-0.9" y="-0.7" dx="1" dy="1" layer="1" roundness="20"/>
+<smd name="C2" x="-0.9" y="0.7" dx="1" dy="1" layer="1" roundness="20"/>
+<smd name="C1" x="0.9" y="0.7" dx="1" dy="1" layer="1" roundness="20"/>
+<wire x1="-1" y1="0.1" x2="-1" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="-0.3" y1="1" x2="0.3" y2="1" width="0.127" layer="21"/>
+<wire x1="1" y1="0.1" x2="1" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="-0.3" y1="-1" x2="0.3" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-1.3" x2="1.5" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.3" x2="1.5" y2="-0.2" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOIC127P1032X265-18" urn="urn:adsk.eagle:package:11763623/2" type="model" library_version="17">
@@ -692,6 +704,11 @@
 &lt;p&gt;20-pin QFN package with 0.40 mm pitch with body size 3.00 X 3.00 X 0.80 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="QFN40P300X300X80-20N"/>
+</packageinstances>
+</package3d>
+<package3d name="2MMPLCC4" urn="urn:adsk.eagle:package:14540839/1" type="box" library_version="51">
+<packageinstances>
+<packageinstance name="2MMPLCC4"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -827,6 +844,36 @@
 <wire x1="17.78" y1="20.32" x2="-5.08" y2="20.32" width="0.254" layer="94"/>
 <text x="2.54" y="-15.24" size="1.27" layer="94">LP5012</text>
 <text x="-4.826" y="21.082" size="1.27" layer="94">&gt;NAME</text>
+</symbol>
+<symbol name="LED-RGB" urn="urn:adsk.eagle:symbol:14540837/1" library_version="51">
+<wire x1="2.54" y1="5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="2.54" y2="15.24" width="0.254" layer="94"/>
+<wire x1="2.54" y1="15.24" x2="2.54" y2="12.7" width="0.254" layer="94"/>
+<wire x1="2.54" y1="12.7" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="3.048" y1="16.51" x2="3.81" y2="17.526" width="0.254" layer="94"/>
+<wire x1="4.318" y1="16.256" x2="5.334" y2="17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+<pin name="A" x="-12.7" y="7.62" length="middle"/>
+<pin name="C1" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="C2" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="C3" x="15.24" y="2.54" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1054,6 +1101,27 @@
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:13309678/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CLMVC-FKC-CGJJM569ABB7A343" urn="urn:adsk.eagle:component:14540840/1" library_version="51">
+<gates>
+<gate name="G$1" symbol="LED-RGB" x="-2.54" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="2MMPLCC4">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C1" pad="C1"/>
+<connect gate="G$1" pin="C2" pad="C2"/>
+<connect gate="G$1" pin="C3" pad="C3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:14540839/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -8790,249 +8858,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="led" urn="urn:adsk.eagle:library:259">
-<description>&lt;b&gt;LEDs&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;br&gt;
-Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternational.com&amp;gt;&lt;/author&gt; with DUOLED</description>
-<packages>
-<package name="P-LCC-4" urn="urn:adsk.eagle:footprint:15670/1" library_version="5">
-<description>&lt;b&gt;Power TOPLED®&lt;/b&gt;&lt;p&gt;
-Source: http://www.osram.convergy.de/ ... LA_LO_LA_LY E67B.pdf</description>
-<wire x1="-1.4" y1="-1.05" x2="-1.4" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="-1.4" y1="-1.6" x2="-1" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="-1" y1="-1.6" x2="-0.85" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="-0.85" y1="-1.6" x2="1" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="1" y1="-1.6" x2="1.4" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="1.4" y1="-1.6" x2="1.4" y2="1.6" width="0.2032" layer="51"/>
-<wire x1="1.4" y1="1.6" x2="1.1" y2="1.6" width="0.2032" layer="51"/>
-<wire x1="1.1" y1="1.6" x2="-1" y2="1.6" width="0.2032" layer="51"/>
-<wire x1="-1" y1="1.6" x2="-1.4" y2="1.6" width="0.2032" layer="51"/>
-<wire x1="-1" y1="1.6" x2="-1" y2="1.8" width="0.1016" layer="51"/>
-<wire x1="-1" y1="1.8" x2="-0.5" y2="1.8" width="0.1016" layer="51"/>
-<wire x1="-0.5" y1="1.8" x2="-0.5" y2="1.65" width="0.1016" layer="51"/>
-<wire x1="0.5" y1="1.65" x2="0.5" y2="1.8" width="0.1016" layer="51"/>
-<wire x1="0.5" y1="1.8" x2="1.1" y2="1.8" width="0.1016" layer="51"/>
-<wire x1="1.1" y1="1.8" x2="1.1" y2="1.6" width="0.1016" layer="51"/>
-<wire x1="-1" y1="-1.6" x2="-1" y2="-1.8" width="0.1016" layer="51"/>
-<wire x1="-1" y1="-1.8" x2="-0.5" y2="-1.8" width="0.1016" layer="51"/>
-<wire x1="-0.5" y1="-1.8" x2="-0.5" y2="-1.65" width="0.1016" layer="51"/>
-<wire x1="0.5" y1="-1.65" x2="0.5" y2="-1.8" width="0.1016" layer="51"/>
-<wire x1="0.5" y1="-1.8" x2="1" y2="-1.8" width="0.1016" layer="51"/>
-<wire x1="1" y1="-1.8" x2="1" y2="-1.6" width="0.1016" layer="51"/>
-<wire x1="-0.85" y1="-1.6" x2="-1.4" y2="-1.05" width="0.2032" layer="51"/>
-<wire x1="-1.4" y1="1.6" x2="-1.4" y2="-1.05" width="0.2032" layer="51"/>
-<circle x="0" y="0" radius="1.1" width="0.2032" layer="51"/>
-<smd name="A" x="-2" y="3.15" dx="3.3" dy="4.8" layer="1" stop="no" cream="no"/>
-<smd name="C@3" x="2" y="3.15" dx="3.3" dy="4.8" layer="1" stop="no" cream="no"/>
-<smd name="C@4" x="2" y="-3.15" dx="3.3" dy="4.8" layer="1" stop="no" cream="no"/>
-<smd name="C@1" x="-2" y="-3.15" dx="3.3" dy="4.8" layer="1" stop="no" cream="no"/>
-<text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="5.08" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="-1.905" y="-3.81" size="1.27" layer="21">C</text>
-<text x="-1.905" y="2.54" size="1.27" layer="21">A</text>
-<text x="1.27" y="2.54" size="1.27" layer="21">C</text>
-<text x="1.27" y="-3.81" size="1.27" layer="21">C</text>
-<rectangle x1="-1.15" y1="0.75" x2="-0.35" y2="1.85" layer="29"/>
-<rectangle x1="0.35" y1="0.75" x2="1.15" y2="1.85" layer="29"/>
-<rectangle x1="0.35" y1="-1.85" x2="1.15" y2="-0.75" layer="29"/>
-<rectangle x1="-1.15" y1="-1.85" x2="-0.35" y2="-0.75" layer="29"/>
-<rectangle x1="-1.1" y1="-1.8" x2="-0.4" y2="-0.8" layer="31"/>
-<rectangle x1="0.4" y1="-1.8" x2="1.1" y2="-0.8" layer="31"/>
-<rectangle x1="0.4" y1="0.8" x2="1.1" y2="1.8" layer="31"/>
-<rectangle x1="-1.1" y1="0.8" x2="-0.4" y2="1.8" layer="31"/>
-<rectangle x1="-0.2" y1="-0.2" x2="0.2" y2="0.2" layer="21"/>
-</package>
-<package name="P-LCC-4-3" urn="urn:adsk.eagle:footprint:15687/1" library_version="5">
-<description>&lt;b&gt;Hyper TOPLED® &lt;/b&gt;&lt;p&gt;
-Source: http://www.osram.convergy.de/</description>
-<wire x1="-1.4" y1="-1.05" x2="-1.4" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="-1.4" y1="-1.6" x2="-1" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="-1" y1="-1.6" x2="-0.85" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="-0.85" y1="-1.6" x2="1" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="1" y1="-1.6" x2="1.4" y2="-1.6" width="0.2032" layer="51"/>
-<wire x1="1.4" y1="-1.6" x2="1.4" y2="1.6" width="0.2032" layer="51"/>
-<wire x1="1.4" y1="1.6" x2="1.1" y2="1.6" width="0.2032" layer="51"/>
-<wire x1="1.1" y1="1.6" x2="-1" y2="1.6" width="0.2032" layer="51"/>
-<wire x1="-1" y1="1.6" x2="-1.4" y2="1.6" width="0.2032" layer="51"/>
-<wire x1="-1" y1="1.6" x2="-1" y2="1.8" width="0.1016" layer="51"/>
-<wire x1="-1" y1="1.8" x2="-0.5" y2="1.8" width="0.1016" layer="51"/>
-<wire x1="-0.5" y1="1.8" x2="-0.5" y2="1.65" width="0.1016" layer="51"/>
-<wire x1="0.5" y1="1.65" x2="0.5" y2="1.8" width="0.1016" layer="51"/>
-<wire x1="0.5" y1="1.8" x2="1.1" y2="1.8" width="0.1016" layer="51"/>
-<wire x1="1.1" y1="1.8" x2="1.1" y2="1.6" width="0.1016" layer="51"/>
-<wire x1="-1" y1="-1.6" x2="-1" y2="-1.8" width="0.1016" layer="51"/>
-<wire x1="-1" y1="-1.8" x2="-0.5" y2="-1.8" width="0.1016" layer="51"/>
-<wire x1="-0.5" y1="-1.8" x2="-0.5" y2="-1.65" width="0.1016" layer="51"/>
-<wire x1="0.5" y1="-1.65" x2="0.5" y2="-1.8" width="0.1016" layer="51"/>
-<wire x1="0.5" y1="-1.8" x2="1" y2="-1.8" width="0.1016" layer="51"/>
-<wire x1="1" y1="-1.8" x2="1" y2="-1.6" width="0.1016" layer="51"/>
-<wire x1="-0.85" y1="-1.6" x2="-1.4" y2="-1.05" width="0.2032" layer="51"/>
-<wire x1="-1.4" y1="1.6" x2="-1.4" y2="-1.05" width="0.2032" layer="51"/>
-<circle x="0" y="0" radius="1.1" width="0.2032" layer="51"/>
-<smd name="2" x="-2" y="3.15" dx="3.3" dy="4.8" layer="1" stop="no" cream="no"/>
-<smd name="3" x="2" y="3.15" dx="3.3" dy="4.8" layer="1" stop="no" cream="no"/>
-<smd name="4" x="2" y="-3.15" dx="3.3" dy="4.8" layer="1" stop="no" cream="no"/>
-<smd name="1" x="-2" y="-3.15" dx="3.3" dy="4.8" layer="1" stop="no" cream="no"/>
-<text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="5.08" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="-1.905" y="-3.81" size="1.27" layer="21">1</text>
-<text x="-1.905" y="2.54" size="1.27" layer="21">2</text>
-<text x="1.27" y="2.54" size="1.27" layer="21">3</text>
-<text x="1.27" y="-3.81" size="1.27" layer="21">4</text>
-<rectangle x1="-1.15" y1="0.75" x2="-0.35" y2="1.85" layer="29"/>
-<rectangle x1="0.35" y1="0.75" x2="1.15" y2="1.85" layer="29"/>
-<rectangle x1="0.35" y1="-1.85" x2="1.15" y2="-0.75" layer="29"/>
-<rectangle x1="-1.15" y1="-1.85" x2="-0.35" y2="-0.75" layer="29"/>
-<rectangle x1="-1.1" y1="-1.8" x2="-0.4" y2="-0.8" layer="31"/>
-<rectangle x1="0.4" y1="-1.8" x2="1.1" y2="-0.8" layer="31"/>
-<rectangle x1="0.4" y1="0.8" x2="1.1" y2="1.8" layer="31"/>
-<rectangle x1="-1.1" y1="0.8" x2="-0.4" y2="1.8" layer="31"/>
-<rectangle x1="0.1" y1="0.1" x2="0.5" y2="0.5" layer="21"/>
-<rectangle x1="0.1" y1="-0.5" x2="0.5" y2="-0.1" layer="21"/>
-<rectangle x1="-0.5" y1="-0.5" x2="-0.1" y2="-0.1" layer="21"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="P-LCC-4" urn="urn:adsk.eagle:package:15816/1" type="box" library_version="5">
-<description>Power TOPLED®
-Source: http://www.osram.convergy.de/ ... LA_LO_LA_LY E67B.pdf</description>
-<packageinstances>
-<packageinstance name="P-LCC-4"/>
-</packageinstances>
-</package3d>
-<package3d name="P-LCC-4-3" urn="urn:adsk.eagle:package:15834/1" type="box" library_version="5">
-<description>Hyper TOPLED® 
-Source: http://www.osram.convergy.de/</description>
-<packageinstances>
-<packageinstance name="P-LCC-4-3"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="LED-RGB" urn="urn:adsk.eagle:symbol:15686/2" library_version="5">
-<wire x1="6.35" y1="1.778" x2="5.08" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-0.254" x2="3.81" y2="1.778" width="0.254" layer="94"/>
-<wire x1="6.35" y1="-0.254" x2="5.08" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-0.254" x2="3.81" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="6.35" y1="1.778" x2="5.08" y2="1.778" width="0.254" layer="94"/>
-<wire x1="5.08" y1="1.778" x2="3.81" y2="1.778" width="0.254" layer="94"/>
-<wire x1="3.048" y1="1.524" x2="2.159" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="0.762" x2="2.921" y2="-0.127" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="1.778" x2="0" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="0" y1="-0.254" x2="-1.27" y2="1.778" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-0.254" x2="0" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="0" y1="-0.254" x2="-1.27" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.778" x2="0" y2="1.778" width="0.254" layer="94"/>
-<wire x1="0" y1="1.778" x2="-1.27" y2="1.778" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="1.524" x2="-2.921" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0.762" x2="-2.159" y2="-0.127" width="0.1524" layer="94"/>
-<wire x1="-3.81" y1="1.778" x2="-5.08" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-0.254" x2="-6.35" y2="1.778" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="-0.254" x2="-5.08" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-0.254" x2="-6.35" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="1.778" x2="-5.08" y2="1.778" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="1.778" x2="-6.35" y2="1.778" width="0.254" layer="94"/>
-<wire x1="-7.112" y1="1.524" x2="-8.001" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="-6.35" y1="0.762" x2="-7.239" y2="-0.127" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="1.778" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="1.778" width="0.1524" layer="94"/>
-<circle x="-5.08" y="2.54" radius="0.1796" width="0.254" layer="94"/>
-<circle x="0" y="2.54" radius="0.1796" width="0.254" layer="94"/>
-<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="5.461" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="CGREEN" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="CBLUE" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="CRED" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="A2" x="-5.08" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<polygon width="0.1524" layer="94">
-<vertex x="2.032" y="1.016"/>
-<vertex x="1.778" y="0.254"/>
-<vertex x="2.54" y="0.508"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="2.794" y="0.254"/>
-<vertex x="2.54" y="-0.508"/>
-<vertex x="3.302" y="-0.254"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-3.048" y="1.016"/>
-<vertex x="-3.302" y="0.254"/>
-<vertex x="-2.54" y="0.508"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-2.286" y="0.254"/>
-<vertex x="-2.54" y="-0.508"/>
-<vertex x="-1.778" y="-0.254"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-8.128" y="1.016"/>
-<vertex x="-8.382" y="0.254"/>
-<vertex x="-7.62" y="0.508"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-7.366" y="0.254"/>
-<vertex x="-7.62" y="-0.508"/>
-<vertex x="-6.858" y="-0.254"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TOPLED-3" urn="urn:adsk.eagle:component:15910/3" prefix="LED" uservalue="yes" library_version="5">
-<description>&lt;b&gt;OSRAM&lt;/b&gt;&lt;p&gt;
-- &lt;u&gt;Hyper Multi TOPLED® (RGB)&lt;/u&gt;&lt;br&gt;
-LB E673, LV E673, LT E673&lt;br&gt;
-- &lt;u&gt;Power TOPLED® Enhanced optical Power LED (HOP2000)&lt;/u&gt;&lt;br&gt;
-LS E67B, LA E67B, LO E67B, LY E67B&lt;br&gt;
-- &lt;u&gt;Hyper Multi TOPLED® Enhanced optical Power LED (HOP2000 / ATON®)&lt;/u&gt;&lt;br&gt;
-LATB T66B&lt;br&gt;
-- &lt;u&gt;Hyper Multi TOPLED® Hyper-Bright LED&lt;/u&gt;&lt;br&gt;
-LATB T686&lt;br&gt;
-
-&lt;p&gt;
-Source: http://www.osram.convergy.de/</description>
-<gates>
-<gate name="G$1" symbol="LED-RGB" x="0" y="0"/>
-</gates>
-<devices>
-<device name="P-LCC-4" package="P-LCC-4">
-<connects>
-<connect gate="G$1" pin="A2" pad="A"/>
-<connect gate="G$1" pin="CBLUE" pad="C@3"/>
-<connect gate="G$1" pin="CGREEN" pad="C@4"/>
-<connect gate="G$1" pin="CRED" pad="C@1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15816/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="" package="P-LCC-4-3">
-<connects>
-<connect gate="G$1" pin="A2" pad="2"/>
-<connect gate="G$1" pin="CBLUE" pad="3"/>
-<connect gate="G$1" pin="CGREEN" pad="4"/>
-<connect gate="G$1" pin="CRED" pad="1"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:15834/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9054,16 +8879,16 @@ Source: http://www.osram.convergy.de/</description>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7k"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="TOPLED-3" device="P-LCC-4" package3d_urn="urn:adsk.eagle:package:15816/1"/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="TOPLED-3" device="P-LCC-4" package3d_urn="urn:adsk.eagle:package:15816/1"/>
-<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="TOPLED-3" device="P-LCC-4" package3d_urn="urn:adsk.eagle:package:15816/1"/>
-<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="TOPLED-3" device="P-LCC-4" package3d_urn="urn:adsk.eagle:package:15816/1"/>
 <part name="U3" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="LP5012" device="" package3d_urn="urn:adsk.eagle:package:13309678/2"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value=".1u"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value="1u"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3"/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value=".1uf"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603K" package3d_urn="urn:adsk.eagle:package:23680/2" value=".1uf"/>
+<part name="U$1" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="CLMVC-FKC-CGJJM569ABB7A343" device="" package3d_urn="urn:adsk.eagle:package:14540839/1"/>
+<part name="U$2" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="CLMVC-FKC-CGJJM569ABB7A343" device="" package3d_urn="urn:adsk.eagle:package:14540839/1"/>
+<part name="U$3" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="CLMVC-FKC-CGJJM569ABB7A343" device="" package3d_urn="urn:adsk.eagle:package:14540839/1"/>
+<part name="U$4" library="Conservify" library_urn="urn:adsk.eagle:library:11839183" deviceset="CLMVC-FKC-CGJJM569ABB7A343" device="" package3d_urn="urn:adsk.eagle:package:14540839/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -9130,22 +8955,6 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="NAME" x="270.51" y="-49.3014" size="1.778" layer="95"/>
 <attribute name="VALUE" x="270.51" y="-54.102" size="1.778" layer="96"/>
 </instance>
-<instance part="LED1" gate="G$1" x="363.22" y="-106.68" smashed="yes" rot="R270">
-<attribute name="NAME" x="366.522" y="-104.14" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="368.681" y="-104.14" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="LED2" gate="G$1" x="363.22" y="-124.46" smashed="yes" rot="R270">
-<attribute name="NAME" x="366.522" y="-121.92" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="368.681" y="-121.92" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="LED3" gate="G$1" x="363.22" y="-142.24" smashed="yes" rot="R270">
-<attribute name="NAME" x="366.522" y="-139.7" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="368.681" y="-139.7" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="LED4" gate="G$1" x="363.22" y="-160.02" smashed="yes" rot="R270">
-<attribute name="NAME" x="366.522" y="-157.48" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="368.681" y="-157.48" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="U3" gate="G$1" x="322.58" y="-134.62" smashed="yes">
 <attribute name="NAME" x="317.754" y="-113.538" size="1.27" layer="94"/>
 </instance>
@@ -9169,6 +8978,10 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="NAME" x="265.176" y="-23.241" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="265.176" y="-18.161" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="U$1" gate="G$1" x="375.92" y="-99.06" smashed="yes" rot="R180"/>
+<instance part="U$2" gate="G$1" x="375.92" y="-116.84" smashed="yes" rot="R180"/>
+<instance part="U$3" gate="G$1" x="375.92" y="-134.62" smashed="yes" rot="R180"/>
+<instance part="U$4" gate="G$1" x="375.92" y="-152.4" smashed="yes" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -9585,19 +9398,21 @@ Source: http://www.osram.convergy.de/</description>
 <label x="195.58" y="-83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LED4" gate="G$1" pin="A2"/>
-<pinref part="LED3" gate="G$1" pin="A2"/>
-<wire x1="368.3" y1="-154.94" x2="368.3" y2="-137.16" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="A2"/>
-<wire x1="368.3" y1="-137.16" x2="368.3" y2="-119.38" width="0.1524" layer="91"/>
-<junction x="368.3" y="-137.16"/>
-<pinref part="LED1" gate="G$1" pin="A2"/>
-<wire x1="368.3" y1="-119.38" x2="368.3" y2="-101.6" width="0.1524" layer="91"/>
-<junction x="368.3" y="-119.38"/>
-<wire x1="368.3" y1="-101.6" x2="368.3" y2="-91.44" width="0.1524" layer="91"/>
-<junction x="368.3" y="-101.6"/>
-<wire x1="368.3" y1="-91.44" x2="378.46" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="-162.56" x2="388.62" y2="-160.02" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="-160.02" x2="388.62" y2="-142.24" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="-142.24" x2="388.62" y2="-124.46" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="-124.46" x2="388.62" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="-106.68" x2="388.62" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="-91.44" x2="378.46" y2="-91.44" width="0.1524" layer="91"/>
 <label x="373.38" y="-91.44" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="A"/>
+<junction x="388.62" y="-106.68"/>
+<pinref part="U$2" gate="G$1" pin="A"/>
+<junction x="388.62" y="-124.46"/>
+<pinref part="U$3" gate="G$1" pin="A"/>
+<junction x="388.62" y="-142.24"/>
+<pinref part="U$4" gate="G$1" pin="A"/>
+<junction x="388.62" y="-160.02"/>
 </segment>
 </net>
 <net name="XX3" class="0">
@@ -9814,104 +9629,104 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="U3" gate="G$1" pin="OUT0"/>
 <wire x1="345.44" y1="-116.84" x2="347.98" y2="-116.84" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="-116.84" x2="347.98" y2="-101.6" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="CRED"/>
 <wire x1="347.98" y1="-101.6" x2="360.68" y2="-101.6" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="C3"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="CBLUE"/>
 <wire x1="360.68" y1="-106.68" x2="350.52" y2="-106.68" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="-106.68" x2="350.52" y2="-119.38" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="OUT1"/>
 <wire x1="350.52" y1="-119.38" x2="345.44" y2="-119.38" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="C2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="CGREEN"/>
 <wire x1="360.68" y1="-111.76" x2="353.06" y2="-111.76" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="-111.76" x2="353.06" y2="-121.92" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="OUT2"/>
 <wire x1="353.06" y1="-121.92" x2="345.44" y2="-121.92" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="C1"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="LED2" gate="G$1" pin="CRED"/>
 <wire x1="360.68" y1="-119.38" x2="355.6" y2="-119.38" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="-119.38" x2="355.6" y2="-124.46" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="OUT3"/>
 <wire x1="355.6" y1="-124.46" x2="345.44" y2="-124.46" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="C3"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="LED2" gate="G$1" pin="CBLUE"/>
 <wire x1="360.68" y1="-124.46" x2="358.14" y2="-124.46" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="-124.46" x2="358.14" y2="-127" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="OUT4"/>
 <wire x1="358.14" y1="-127" x2="345.44" y2="-127" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="C2"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="LED2" gate="G$1" pin="CGREEN"/>
 <pinref part="U3" gate="G$1" pin="OUT5"/>
 <wire x1="360.68" y1="-129.54" x2="345.44" y2="-129.54" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="C1"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="CRED"/>
 <wire x1="360.68" y1="-137.16" x2="360.68" y2="-132.08" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="OUT6"/>
 <wire x1="360.68" y1="-132.08" x2="345.44" y2="-132.08" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="C3"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="CBLUE"/>
 <wire x1="360.68" y1="-142.24" x2="358.14" y2="-142.24" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="-142.24" x2="358.14" y2="-134.62" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="OUT7"/>
 <wire x1="358.14" y1="-134.62" x2="345.44" y2="-134.62" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="C2"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="CGREEN"/>
 <wire x1="360.68" y1="-147.32" x2="355.6" y2="-147.32" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="-147.32" x2="355.6" y2="-137.16" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="OUT8"/>
 <wire x1="355.6" y1="-137.16" x2="345.44" y2="-137.16" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="C1"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="LED4" gate="G$1" pin="CRED"/>
 <wire x1="360.68" y1="-154.94" x2="353.06" y2="-154.94" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="-154.94" x2="353.06" y2="-139.7" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="OUT9"/>
 <wire x1="353.06" y1="-139.7" x2="345.44" y2="-139.7" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="C3"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="LED4" gate="G$1" pin="CBLUE"/>
 <wire x1="360.68" y1="-160.02" x2="350.52" y2="-160.02" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="-160.02" x2="350.52" y2="-142.24" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="OUT10"/>
 <wire x1="350.52" y1="-142.24" x2="345.44" y2="-142.24" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="C2"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="LED4" gate="G$1" pin="CGREEN"/>
 <wire x1="360.68" y1="-165.1" x2="347.98" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="-165.1" x2="347.98" y2="-144.78" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="OUT11"/>
 <wire x1="347.98" y1="-144.78" x2="345.44" y2="-144.78" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="C1"/>
 </segment>
 </net>
 <net name="N$20" class="0">
